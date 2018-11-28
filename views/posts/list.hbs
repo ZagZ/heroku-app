@@ -1,0 +1,14 @@
+<h1>Todos nuestros posts</h1>
+{{#each posts}}
+<a href="#!">
+  {{this.title}}
+</a>
+<button>DELETE</button>
+<br>
+{{else}}
+<h2>No hay posts</h2>
+{{/each}}
+
+{{#if user}}
+<a href="/posts/new">Agrega un post</a>
+{{/if}}
